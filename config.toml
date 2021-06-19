@@ -1,0 +1,8 @@
+baseURL = "https://lyhxavier.github.io/"
+languageCode = "en-us"
+title = "xavierlyh's Academic Archive"
+theme = "uBlogger"
+
+[params]
+	# uBlogger theme version
+	version = "2.0.X" 
