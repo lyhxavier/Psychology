@@ -1,8 +1,69 @@
 baseURL = "https://lyhxavier.github.io/Academic-Archive/"
+defaultContentLanguage = "en"
 languageCode = "en-us"
 title = "xavierlyh's Academic Archive"
+
 theme = "uBlogger"
 
 [params]
 	# uBlogger theme version
-	version = "2.0.X" 
+	version = "2.0.X"
+	defaultTheme = "dark"
+	description = "An Academic Psychology Blog"
+	keywords = ["Academic", "Psychology"]
+
+	[params.home]
+    	rss = 10
+    		[params.home.profile]
+    		# Cover page introduction to myself
+    			enable = true
+    			avatarURL = "images/avatar.jpg"
+    			title = "xavierlyh | Academic Psychology Blog"
+          		subtitle = "An academic archive of my psychological writings"
+          		social = true
+
+    [params.social]
+        Linkedin = "xavierlyh"
+        Instagram = "xxxx"
+        Reddit = "Claxui"
+        Email = "xavierlimyanheng@gmail.com"
+
+    [params.page]
+        hiddenFromHomePage = false
+        hiddenFromSearch = false
+        twemoji = false
+        ruby = true
+        fraction = true
+    	fontawesome = true
+    	linkToMarkdown = true
+    	rssFullText = false
+
+    	[params.page.share]
+     		enable = true
+      		Linkedin = true
+      		Reddit = true
+      		Email = true
+
+[menu]
+	[[menu.main]]
+	# Storage of all relevant posts
+		identifier = "posts"
+		name = "Posts"
+		url = "/posts/"
+		weight = 1
+	[[menu.main]]
+	# Topics refer to field of psychology the writing represents
+    	identifier = "topics"
+   		name = "Topics"
+    	url = "/topics/"
+    	weight = 2
+  	[[menu.main]]
+  	# Tags refer to important themes of the writing
+    	identifier = "tags"
+    	name = "Tags"
+    	url = "/tags/"
+    	weight = 3
+
+[markup]
+  	[markup.highlight]
+    	noClasses = false
