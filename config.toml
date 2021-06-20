@@ -1,4 +1,4 @@
-baseURL = "https://lyhxavier.github.io/Academic-Archive/"
+baseURL = "https://lyhxavier.github.io/Psychology/"
 defaultContentLanguage = "en"
 languageCode = "en-us"
 title = "xavierlyh's Academic Archive"
@@ -13,57 +13,79 @@ theme = "uBlogger"
 	keywords = ["Academic", "Psychology"]
 
 	[params.home]
-    	rss = 10
-    		[params.home.profile]
-    		# Cover page introduction to myself
-    			enable = true
-    			avatarURL = "images/avatar.jpg"
-    			title = "xavierlyh | Academic Psychology Blog"
-          		subtitle = "An academic archive of my psychological writings"
-          		social = true
+    rss = 10
+    	[params.home.profile]
+    	# Cover page introduction to myself
+    		enable = true
+    		avatarURL = "images/avatar.jpg"
+    		title = "xavierlyh | Academic Psychology Blog"
+        subtitle = "An academic archive of my psychological writings"
+        social = true
 
-    [params.social]
-        Linkedin = "xavierlyh"
-        Instagram = "xxxx"
-        Reddit = "Claxui"
-        Email = "xavierlimyanheng@gmail.com"
+  [params.social]
+    Linkedin = "xavierlyh"
+    Instagram = "xxxx"
+    Reddit = "Claxui"
+    Email = "xavierlimyanheng@gmail.com"
 
-    [params.page]
-        hiddenFromHomePage = false
-        hiddenFromSearch = false
-        twemoji = false
-        ruby = true
-        fraction = true
-    	fontawesome = true
-    	linkToMarkdown = true
-    	rssFullText = false
+  [params.page]
+    hiddenFromHomePage = false
+    hiddenFromSearch = false
+    twemoji = false
+    ruby = true
+    fraction = true
+    fontawesome = true
+    linkToMarkdown = true
+    rssFullText = false
 
-    	[params.page.share]
-     		enable = true
-      		Linkedin = true
-      		Reddit = true
-      		Email = true
+    [params.page.share]
+      enable = true
+      Linkedin = true
+      Reddit = true
+      Email = true
+
+  [params.search]
+    enable = true
+    type = "algolia"
+    contentLength = 4000
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+    [params.search.algolia]
+      index = "index.en"
+      appID = "PASDMWALPK"
+      searchKey = "b42948e51daaa93df92381c8e2ac0f93"
 
 [menu]
 	[[menu.main]]
-	# Storage of all relevant posts
-		identifier = "posts"
-		name = "Posts"
-		url = "/posts/"
-		weight = 1
+	 # Storage of all relevant posts
+	 identifier = "posts"
+	 name = "Posts"
+	 url = "posts/"
+	 weight = 1
+
 	[[menu.main]]
-	# Topics refer to field of psychology the writing represents
-    	identifier = "topics"
-   		name = "Topics"
-    	url = "/topics/"
-    	weight = 2
-  	[[menu.main]]
-  	# Tags refer to important themes of the writing
-    	identifier = "tags"
-    	name = "Tags"
-    	url = "/tags/"
-    	weight = 3
+	 # Categories refer to field of psychology the writing represents
+    identifier = "categories"
+   	name = "Categories"
+    url = "categories/"
+    weight = 2
+
+  [[menu.main]]
+    # Tags refer to important themes of the writing
+    identifier = "tags"
+    name = "Tags"
+    url = "tags/"
+    weight = 3
+
+  [[menu.main]]
+    # About refer to a description of myself
+    identifier = "about"
+    name = "About"
+    url = "about/"
+    weight = 4
 
 [markup]
-  	[markup.highlight]
-    	noClasses = false
+  [markup.highlight]
+    noClasses = false

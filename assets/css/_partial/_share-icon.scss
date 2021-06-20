@@ -13,7 +13,7 @@
     @include transition(background 0.2s ease);
 
     .svg-social-icon {
-      background-image: url(/Academic-Archive/img/icon/sprite-social-color.svg);
+      background-image: url(/Psychology/img/icon/sprite-social-color.svg);
     }
 
     [theme=dark] & {
@@ -188,14 +188,14 @@
 .svg-social-icon {
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(/Academic-Archive/img/icon/sprite-social.svg);
+  background-image: url(/Psychology/img/icon/sprite-social.svg);
   width: 20px;
   height: 20px;
 }
 .svg-social-icon-color {
   display: inline-block;
   background-repeat: no-repeat;
-  background-image: url(/Academic-Archive/img/icon/sprite-social-color.svg);
+  background-image: url(/Psychology/img/icon/sprite-social-color.svg);
   width: 20px;
   height: 20px;
 }
