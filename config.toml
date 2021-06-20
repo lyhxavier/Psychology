@@ -40,22 +40,41 @@ theme = "uBlogger"
 
     [params.page.share]
       enable = true
+      Facebook = true
+      Twitter = true
       Linkedin = true
-      Reddit = true
-      Email = true
 
   [params.search]
     enable = true
-    type = "algolia"
+    type = "lunr"
     contentLength = 4000
     maxResultLength = 10
     snippetLength = 30
     highlightTag = "em"
     absoluteURL = false
-    [params.search.algolia]
-      index = "index.en"
-      appID = "PASDMWALPK"
-      searchKey = "b42948e51daaa93df92381c8e2ac0f93"
+
+  [params.section]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.list]
+    paginate = 20
+    dateFormat = "01-02"
+    rss = 10
+
+  [params.header]
+    desktopMode = "fixed"
+    mobileMode = "auto"
+
+  [params.footer]
+    enable = true
+    custom = ''
+    hugo = true
+    copyright = true
+    author = true
+    since = 2021
+    license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
 [menu]
 	[[menu.main]]
@@ -86,6 +105,27 @@ theme = "uBlogger"
     url = "about/"
     weight = 4
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[Permalinks]
+  posts = ":filename"
+
 [markup]
   [markup.highlight]
+    codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
     noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.renderer]
+      unsafe = true
