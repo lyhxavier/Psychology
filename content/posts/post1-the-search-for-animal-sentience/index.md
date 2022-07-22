@@ -47,7 +47,7 @@ Theory of mind (ToM), or mental state attribution, as conceptualised by Premack 
 ---
 
 **Theory of Mind**
-: The capacity of ascribe mental states (e.g., desires, intentions) to others.
+: The capacity to ascribe mental states (e.g., desires, intentions) to others.
 
 ---
 
