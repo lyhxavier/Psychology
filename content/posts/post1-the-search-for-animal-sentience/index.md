@@ -1,9 +1,9 @@
 ---
 title: "The Search for Animal Sentience"
 subtitle: "The Search for Animal Sentience: Do Non-human Animals Have a Theory of Mind?"
-date: 2021-06-20
-lastmod: 2021-06-20
-description: "Canine lovers like myself often subject their lovely companions to their personal emotional turmoil. In this article, I question if my own canine companion - Miles - and his non-human counterparts are capable of comprehending and expressing human-like emotions. Drawing on both historical and contemporary comparative psychology and developmental psychology, I summarise the current state of research in the search for animal sentience."
+date: 2022-07-22
+lastmod: 2022-07-22
+description: "Canine lovers like myself often subject their lovely companions to their personal emotional turmoil. In this article, I question if my own canine companion - Miles - and his non-human counterparts are capable of comprehending and expressing human-like emotions. Drawing on both historical and contemporary comparative psychology and developmental psychology insights, I summarise the current state of research in the search for animal sentience."
 draft: false 
 author: "Xavier Lim"
 resources:
